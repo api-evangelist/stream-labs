@@ -1,0 +1,24 @@
+generated: '2026-07-21'
+method: searched
+source: https://dev.streamlabs.com/docs/oauth-2
+docs: https://dev.streamlabs.com/docs/oauth-2
+summary:
+  types:
+  - oauth2
+  api_key_in: []
+  oauth2_flows:
+  - authorizationCode
+  token_delivery: bearer-header-only
+schemes:
+- name: OAuth2
+  type: oauth2
+  flows:
+  - flow: authorizationCode
+    authorizationUrl: https://streamlabs.com/api/v2.0/authorize
+    tokenUrl: https://streamlabs.com/api/v2.0/token
+    refresh: true
+  notes: >-
+    All endpoints require authentication. In v2.0 the access token cannot be
+    passed as a query parameter; it must be sent in an Authorization Bearer
+    header. Per-feature OAuth scopes gate each resource (see
+    scopes/stream-labs-scopes.yml).

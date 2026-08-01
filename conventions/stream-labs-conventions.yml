@@ -1,0 +1,41 @@
+generated: '2026-07-21'
+method: searched
+source: https://dev.streamlabs.com/docs
+docs:
+  base: https://dev.streamlabs.com/docs
+  oauth: https://dev.streamlabs.com/docs/oauth-2
+  pagination: https://dev.streamlabs.com/docs/pagination
+  tiers: https://dev.streamlabs.com/docs/tiers
+authentication:
+  style: oauth2-bearer
+  detail: >-
+    OAuth 2.0 authorization-code flow with per-feature scopes. Access tokens are
+    sent only via an Authorization Bearer header (v2.0 removed the query-param
+    token accepted in v1.0). See authentication/stream-labs-authentication.yml.
+versioning:
+  scheme: uri-path
+  current: v2.0
+  detail: >-
+    Version is carried in the path (https://streamlabs.com/api/v2.0/...). v2.0
+    endpoints are consumed exactly as v1.0 with only the version segment changed;
+    the breaking change in v2.0 is Bearer-header-only token delivery.
+pagination:
+  documented: true
+  docs: https://dev.streamlabs.com/docs/pagination
+tiers:
+  documented: true
+  docs: https://dev.streamlabs.com/docs/tiers
+  detail: Application access is organized into tiers; see the Tiers docs page.
+idempotency:
+  supported: false
+  detail: No idempotency-key mechanism is documented for the Streamlabs API.
+realtime:
+  socket_api: true
+  detail: >-
+    A real-time Socket API is available; obtain a socket token via GET
+    /socket/token (socket.token scope) to subscribe to live account events
+    (donations, alerts, etc.).
+cross_links:
+  authentication: authentication/stream-labs-authentication.yml
+  scopes: scopes/stream-labs-scopes.yml
+  lifecycle: lifecycle/stream-labs-lifecycle.yml

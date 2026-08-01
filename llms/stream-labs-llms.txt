@@ -1,0 +1,29 @@
+# Streamlabs
+
+> Streamlabs is a live-streaming toolkit for content creators (alerts, donations/tips, loyalty points, media share, widgets). The Streamlabs API lets developers access a user's Streamlabs account, trigger custom alerts, read/create donations, manage loyalty points, control media share, and open a real-time Socket API. Authorization is OAuth 2.0 with per-feature scopes; the REST base is https://streamlabs.com/api/v2.0. Streamlabs is backed by Battery Ventures and is a Logitech company.
+
+## APIs
+
+- [Streamlabs API (developer portal)](https://dev.streamlabs.com/): OAuth 2.0 REST API, base https://streamlabs.com/api/v2.0
+- [API Reference](https://dev.streamlabs.com/reference): endpoint reference for donations, alerts, points, media share, socket
+- [OAuth 2.0 guide](https://dev.streamlabs.com/docs/oauth-2): authorization-code flow, Bearer-header tokens
+- [Scopes](https://dev.streamlabs.com/docs/scopes): per-feature OAuth scopes
+- [Pagination](https://dev.streamlabs.com/docs/pagination)
+- [Tiers](https://dev.streamlabs.com/docs/tiers)
+
+## Artifacts
+
+- [Authentication profile](authentication/stream-labs-authentication.yml)
+- [OAuth scopes](scopes/stream-labs-scopes.yml)
+- [API conventions](conventions/stream-labs-conventions.yml)
+- [Conformance](conformance/stream-labs-conformance.yml)
+- [Lifecycle](lifecycle/stream-labs-lifecycle.yml)
+- [MCP candidate tools](mcp/stream-labs-mcp.yml)
+- [Well-known index](well-known/stream-labs-well-known.yml)
+
+## Docs
+
+- [Documentation](https://dev.streamlabs.com/docs)
+- [Support](https://support.streamlabs.com/)
+- [GitHub organization](https://github.com/streamlabs)
+- [Streamlabs Desktop API docs](https://streamlabs.github.io/streamlabs-desktop-api-docs/)

@@ -1,0 +1,19 @@
+generated: '2026-07-21'
+method: searched
+host: https://streamlabs.com
+documents:
+- path: /.well-known/security.txt
+  status: 200
+  file: stream-labs-security.txt
+- path: /.well-known/openid-configuration
+  status: 404
+- path: /.well-known/oauth-authorization-server
+  status: 404
+- path: /.well-known/api-catalog
+  status: 404
+- path: /.well-known/ai-plugin.json
+  status: 404
+notes: >-
+  Only /.well-known/security.txt is published (200). It is served under the
+  parent company's (Logitech) coordinated-disclosure program on HackerOne. The
+  dev.streamlabs.com docs host returns 404 for all probed well-known paths.

@@ -1,8 +1,15 @@
 aid: stream-labs
 name: Stream Labs
-description: Stream Labs is a company surfaced as a portfolio company of battery-ventures and added to
-  the API Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment
-  pipeline.
+description: >-
+  Streamlabs is a live-streaming toolkit for content creators, providing alerts,
+  donations/tips, loyalty points, media share, chat and stream widgets across
+  Twitch, YouTube and other platforms. The Streamlabs API lets developers access
+  a user's Streamlabs account and trigger custom alerts, read and create
+  donations, manage loyalty points, control media-share playback, spin the wheel,
+  empty the tip jar, roll credits, and open a real-time Socket API for live
+  events. Access is authorized with OAuth 2.0 using granular per-feature scopes,
+  and requests are made against the versioned REST base at streamlabs.com/api/v2.0.
+  Streamlabs is backed by Battery Ventures and was acquired by Logitech in 2019.
 url: https://raw.githubusercontent.com/api-evangelist/stream-labs/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -10,14 +17,113 @@ x-backed-by:
 - battery-ventures
 x-tier: stub
 x-tier-reason: portfolio-lead
+accessModel:
+  pricing: unknown
+  onboarding: self-serve
+  trial: false
+  try_now: false
+  public: false
+  label: Self-serve signup
+  confidence: medium
+  source:
+  - authentication
+  generated: '2026-07-22'
+  method: derived
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-21'
 tags:
 - Company
-apis: []
+- Live Streaming
+- Creator Economy
+- Alerts
+- Donations
+- Loyalty Points
+- Media Share
+- OAuth
+- Real-time
+- Streaming Tools
+image: https://cdn.streamlabs.com/static/imgs/logos/kevin-logo.png
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+apis:
+- name: Streamlabs API
+  description: >-
+    REST API to access a user's Streamlabs account: donations, custom alerts,
+    loyalty points, media share, alert profiles, credits, tip jar, wheel spin,
+    and a real-time Socket API. OAuth 2.0 with per-feature scopes; Bearer token
+    only (no access-token query param in v2.0). Base host streamlabs.com/api/v2.0.
+  humanURL: https://dev.streamlabs.com/
+  baseURL: https://streamlabs.com/api/v2.0
+  tags:
+  - Live Streaming
+  - Alerts
+  - Donations
+  - Loyalty Points
+  - Real-time
+  properties:
+  - type: OAuthScopes
+    url: scopes/stream-labs-scopes.yml
+  - type: Authentication
+    url: authentication/stream-labs-authentication.yml
+  - type: Conventions
+    url: conventions/stream-labs-conventions.yml
+  - type: MCPServer
+    url: mcp/stream-labs-mcp.yml
+  - type: Conformance
+    url: conformance/stream-labs-conformance.yml
+common:
+- type: VulnerabilityDisclosure
+  url: security/stream-labs-vulnerability-disclosure.yml
+- type: DomainSecurity
+  url: security/stream-labs-domain-security.yml
+- type: Security
+  url: https://hackerone.com/logitech
+- type: DeveloperPortal
+  url: https://dev.streamlabs.com/
+- type: Documentation
+  url: https://dev.streamlabs.com/docs
+- type: APIReference
+  url: https://dev.streamlabs.com/reference
+- type: GettingStarted
+  url: https://dev.streamlabs.com/docs/oauth-2
+- type: Authentication
+  url: authentication/stream-labs-authentication.yml
+- type: OAuthScopes
+  url: scopes/stream-labs-scopes.yml
+- type: Support
+  url: https://support.streamlabs.com/
+- type: GitHubOrganization
+  url: https://github.com/streamlabs
+- type: Website
+  url: https://streamlabs.com/
+- type: SignUp
+  url: https://streamlabs.com/login
+- type: Pricing
+  url: https://streamlabs.com/ultra
+- type: TermsOfService
+  url: https://streamlabs.com/terms
+- type: PrivacyPolicy
+  url: https://streamlabs.com/privacy
+- type: Conventions
+  url: conventions/stream-labs-conventions.yml
+- type: LLMsTxt
+  url: llms/stream-labs-llms.txt
+- type: MCPServer
+  url: mcp/stream-labs-mcp.yml
+- type: Conformance
+  url: conformance/stream-labs-conformance.yml
+- type: WellKnown
+  url: well-known/stream-labs-well-known.yml
+- type: SecurityTxt
+  url: well-known/stream-labs-security.txt
+- type: Lifecycle
+  url: lifecycle/stream-labs-lifecycle.yml
+x-enrichment:
+  date: '2026-07-21'
+  status: enriched
+  artifacts_added: 11
+  pass: local-v1

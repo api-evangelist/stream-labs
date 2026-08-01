@@ -1,0 +1,59 @@
+generated: '2026-07-21'
+method: derived
+status: candidate
+source: https://dev.streamlabs.com/reference
+note: >-
+  No official hosted/remote Streamlabs MCP server was found. This is a CANDIDATE
+  tool list derived from the documented REST endpoints at dev.streamlabs.com;
+  each tool maps to a real endpoint + OAuth scope. Not published by the provider.
+server:
+  name: streamlabs
+  transport: http
+  base_api: https://streamlabs.com/api/v2.0
+auth:
+  type: oauth2
+  scopes_ref: scopes/stream-labs-scopes.yml
+tools:
+- name: get_user
+  description: Get the authenticated user's Streamlabs account details.
+  source_operation: GET /user
+- name: list_donations
+  description: List donations for the account.
+  source_operation: GET /donations
+  scope: donations.read
+- name: create_donation
+  description: Create a donation.
+  source_operation: POST /donations
+  scope: donations.create
+- name: create_alert
+  description: Trigger a custom alert.
+  source_operation: POST /alerts
+  scope: alerts.create
+- name: skip_alert
+  description: Skip the current alert in the queue.
+  source_operation: POST /alerts/skip
+  scope: alerts.write
+- name: send_test_alert
+  description: Send a test alert.
+  source_operation: POST /alerts/send_test_alert
+  scope: alerts.write
+- name: get_socket_token
+  description: Get a token to subscribe to the real-time Socket API.
+  source_operation: GET /socket/token
+  scope: socket.token
+- name: get_points
+  description: Read a viewer's loyalty points.
+  source_operation: GET /points
+  scope: points.read
+- name: spin_wheel
+  description: Spin the wheel.
+  source_operation: POST /wheel/spin
+  scope: wheel.write
+- name: empty_jar
+  description: Empty the tip jar.
+  source_operation: POST /jar/empty
+  scope: jar.write
+- name: control_media_share
+  description: Control media-share playback (play, pause, skip, volume).
+  source_operation: media-share endpoints
+  scope: mediashare.control

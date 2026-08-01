@@ -1,0 +1,40 @@
+generated: '2026-07-21'
+method: searched
+source: https://dev.streamlabs.com/docs/scopes
+docs: https://dev.streamlabs.com/docs/scopes
+schemes:
+- name: OAuth2
+  type: oauth2
+  flow: authorizationCode
+  authorizationUrl: https://streamlabs.com/api/v2.0/authorize
+  tokenUrl: https://streamlabs.com/api/v2.0/token
+scopes:
+- scope: donations.create
+  description: Create donations (POST /donations).
+- scope: donations.read
+  description: Read donations (GET /donations).
+- scope: alerts.create
+  description: Trigger custom alerts (POST /alerts).
+- scope: alerts.write
+  description: >-
+    Manage the alert queue: skip, mute/unmute volume, pause/unpause queue, and
+    send test alerts.
+- scope: legacy.token
+  description: Retrieve a legacy token (GET /legacy/token).
+- scope: socket.token
+  description: Retrieve a Socket API token for the real-time event stream (GET /socket/token).
+- scope: points.read
+  description: Read loyalty points (GET /points).
+- scope: points.write
+  description: Modify loyalty points (subtract, import, add to all users).
+- scope: credits.write
+  description: Roll the stream credits (POST /credits/roll).
+- scope: profiles.write
+  description: Retrieve and activate alert profiles.
+- scope: jar.write
+  description: Empty the tip jar (POST /jar/empty).
+- scope: wheel.write
+  description: Spin the wheel (POST /wheel/spin).
+- scope: mediashare.control
+  description: >-
+    Control media share: play, pause, volume, skip, and moderation settings.

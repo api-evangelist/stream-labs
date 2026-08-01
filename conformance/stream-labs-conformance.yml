@@ -1,0 +1,21 @@
+generated: '2026-07-21'
+method: derived
+source: https://dev.streamlabs.com/docs
+standards:
+- id: oauth2
+  conforms: true
+  evidence: >-
+    OAuth 2.0 authorization-code flow with authorize/token endpoints and
+    per-feature scopes (dev.streamlabs.com/docs/oauth-2, /docs/scopes).
+- id: oidc
+  conforms: false
+  evidence: No OpenID Connect discovery document; /.well-known/openid-configuration 404.
+- id: rfc9116-security-txt
+  conforms: true
+  evidence: /.well-known/security.txt published (200), routed to Logitech HackerOne.
+- id: rfc9457-problem-details
+  conforms: false
+  evidence: No application/problem+json error format is documented.
+- id: rfc8594-sunset-header
+  conforms: false
+  evidence: No Sunset/Deprecation header policy documented.
