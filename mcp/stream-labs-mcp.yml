@@ -2,10 +2,9 @@ generated: '2026-07-21'
 method: derived
 status: candidate
 source: https://dev.streamlabs.com/reference
-note: >-
-  No official hosted/remote Streamlabs MCP server was found. This is a CANDIDATE
-  tool list derived from the documented REST endpoints at dev.streamlabs.com;
-  each tool maps to a real endpoint + OAuth scope. Not published by the provider.
+note: No official hosted/remote Streamlabs MCP server was found. This is a CANDIDATE tool list derived
+  from the documented REST endpoints at dev.streamlabs.com; each tool maps to a real endpoint + OAuth
+  scope. Not published by the provider.
 server:
   name: streamlabs
   transport: http
@@ -57,3 +56,9 @@ tools:
   description: Control media-share playback (play, pause, skip, volume).
   source_operation: media-share endpoints
   scope: mediashare.control
+deployment:
+  mode: none
+  verified: derived
+  tools: 11
+  checked: '2026-08-12'
+  source: catalog MCP census
