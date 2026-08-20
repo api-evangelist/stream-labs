@@ -40,6 +40,17 @@ tags:
 - Donations
 - Loyalty Points
 - Media Share
+- Authentication
+- Real-Time
+- Streaming Tools
+tags_raw:
+- Company
+- Live Streaming
+- Creator Economy
+- Alerts
+- Donations
+- Loyalty Points
+- Media Share
 - OAuth
 - Real-time
 - Streaming Tools
@@ -59,6 +70,12 @@ apis:
   humanURL: https://dev.streamlabs.com/
   baseURL: https://streamlabs.com/api/v2.0
   tags:
+  - Live Streaming
+  - Alerts
+  - Donations
+  - Loyalty Points
+  - Real-Time
+  tags_raw:
   - Live Streaming
   - Alerts
   - Donations
