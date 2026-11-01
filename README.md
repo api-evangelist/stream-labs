@@ -64,6 +64,107 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-Stream Labs is a company surfaced as a portfolio company of battery-ventures and added to the API Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+Streamlabs is a live-streaming toolkit for content creators, providing alerts, donations/tips, loyalty points, media share, chat and stream widgets across Twitch, YouTube and other platforms. The Streamlabs API lets developers access a user's Streamlabs account and trigger custom alerts, read and create donations, manage loyalty points, control media-share playback, spin the wheel, empty the tip jar, roll credits, and open a real-time Socket API for live events. Access is authorized with OAuth 2.0 using granular per-feature scopes, and requests are made against the versioned REST base at streamlabs.com/api/v2.0. Streamlabs is backed by Battery Ventures and was acquired by Logitech in 2019.
 
-Backed by: battery-ventures
+**Areas:** Company · Live Streaming · Creator Economy · Alerts · Donations · Loyalty Points · Media Share · Authentication · Real-Time · Streaming Tools
+
+## Stream Labs on APIs.io
+
+Everything profiled for Stream Labs is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/stream-labs/](https://apis.io/providers/stream-labs/)** — or go straight to one of the APIs or properties below.
+
+### APIs (1)
+
+- [Streamlabs API](https://apis.io/apis/stream-labs/streamlabs-api/) — REST API to access a user's Streamlabs account: donations, custom alerts, loyalty points, media share, alert profiles, credits, tip jar, wheel spin, and a…
+
+### Published properties
+
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
+
+#### MCP servers (1)
+
+Model Context Protocol servers that expose the API to agents.
+
+- [streamlabs](https://apis.io/servers/stream-labs/streamlabs/)
+
+#### Security (3)
+
+Authentication, trust centre, and vulnerability disclosure.
+
+- [Stream Labs Authentication](https://apis.io/security/stream-labs/stream-labs-authentication/)
+- [Stream Labs Domain Security](https://apis.io/security/stream-labs/stream-labs-domain-security/)
+- [Stream Labs Vulnerability Disclosure](https://apis.io/security/stream-labs/stream-labs-vulnerability-disclosure/)
+
+#### OAuth scopes (1)
+
+The permissions the API asks for.
+
+- [Stream Labs Scopes](https://apis.io/scopes/stream-labs/stream-labs-scopes/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
+- [Website](https://streamlabs.com/)
+- [Documentation](https://dev.streamlabs.com/docs)
+- [Getting started](https://dev.streamlabs.com/docs/oauth-2)
+- [API reference](https://dev.streamlabs.com/reference)
+- [Pricing](https://streamlabs.com/ultra)
+- [Sign up](https://streamlabs.com/login)
+- [Support](https://support.streamlabs.com/)
+- [Security](https://hackerone.com/logitech)
+- [Terms of service](https://streamlabs.com/terms)
+- [Privacy policy](https://streamlabs.com/privacy)
+- [GitHub](https://github.com/streamlabs)
+
+## API Evangelist rating
+
+**Kin Score 29.4** — thin · rubric 0.24.0 · scored 2026-10-17
+
+| Facet | Score |
+|---|---|
+| Discoverability | 73.2 |
+| Contract quality | 0.0 |
+| Contract governance | 4.5 |
+| Operational transparency | 13.2 |
+| Developer ergonomics | 35.7 |
+| Access clarity | 44.7 |
+
+**Agent readiness 2.5** — human-only
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | — |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | — |
+| Auth Clarity | bearer (partial credit) |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | — |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+
+**Regulatory alignment 40.2** — Horizontal (data, software, accessibility, platform)
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/stream-labs/](https://apis.io/providers/stream-labs/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for Stream Labs: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/stream-labs/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
